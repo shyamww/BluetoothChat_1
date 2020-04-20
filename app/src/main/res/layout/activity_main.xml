@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bton"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+
+        android:text="Bluetooth ON"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <Button
+        android:id="@+id/btoff"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/bton"
+        android:text="Bluetooth Off"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="144dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/btoff"
+        android:text="List Devices" />
+
+    <Button
+        android:id="@+id/listen"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/bton"
+        android:layout_marginTop="0dp"
+        android:text="listen" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Status"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+
+        android:layout_below="@+id/status"
+        android:background="@android:color/transparent"
+        android:scrollbarSize="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/listview"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorPrimary"
+        android:scrollbarSize="5dp"
+        android:text="msg"
+        android:textAlignment="center"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/writemsg"
+        android:layout_width="270dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/msg"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:maxLines="1"
+        android:padding="5dip" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="90dp"
+        android:layout_height="95dp"
+        android:layout_alignRight="@+id/writemsg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="-151dp"
+        android:layout_marginBottom="-10dp"
+        android:text="Send" />
+
+
+</RelativeLayout>
